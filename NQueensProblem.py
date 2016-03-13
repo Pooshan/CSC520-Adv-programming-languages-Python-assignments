@@ -1,3 +1,6 @@
+import time
+
+start_time = time.time()
 
 def queensproblem(rows, columns):
     solutions = [[]]
@@ -26,3 +29,5 @@ for solution in queensproblem(int(r), int(c)):
     print(solution)
 
 print("\n Total number of solution is: ", count)
+
+print("--- Time: %s seconds ---" % (time.time() - start_time))
